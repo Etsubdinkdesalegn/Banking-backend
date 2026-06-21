@@ -19,7 +19,7 @@ public class WebSocketConfig implements WebSocketMessageBrokerConfigurer {
     @Override
     public void registerStompEndpoints(StompEndpointRegistry registry) {
         registry.addEndpoint("/ws-queue")
-                .setAllowedOrigins("http://localhost:3000")
+                .setAllowedOrigins("https://banking-frontend-uisb.onrender.com")
                 .withSockJS();
     }
 }
